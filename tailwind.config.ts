@@ -18,10 +18,25 @@ const config: Config = {
           '50%': {transform: 'translateX(-400px)'},
           '100%': {transform: 'translateX(0)'},
         },
+        wave: {
+          '0%': {transform: 'rotate( 0.0deg)'},
+          '10%': {
+            transform: 'rotate(18.0deg)',
+          },
+          '20%': {transform: 'rotate(-12.0deg)'},
+          '30%': {transform: 'rotate(18.0deg)'},
+          '40%': {transform: 'rotate(-8.0deg)'},
+          '50%': {transform: 'rotate(14.0deg)'},
+          '60%': {
+            transform: 'rotate( 0.0deg)',
+          } /* Reset for the last half to pause */,
+          '100%': {transform: 'rotate( 0.0deg)'},
+        },
       },
       animation: {
         wiggle: 'wiggle 6s ease-in-out infinite',
         sideToSide: 'sideToSide 9s ease-in-out infinite',
+        wave: 'wave 2s ease-in-out 2 alternate both 2s',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

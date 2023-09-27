@@ -16,7 +16,10 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='en'>
       <body
-        className={cn(inter.className, 'bg-slate-50 text-gray-950 relative')}
+        className={cn(
+          inter.className,
+          'bg-slate-50 text-gray-950 relative pt-28 sm:pt-36'
+        )}
       >
         <BackgroundShapes />
         <Header />
