@@ -18,7 +18,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body
         className={cn(
           inter.className,
-          'bg-slate-50 text-gray-950 relative pt-28 sm:pt-36'
+          'bg-slate-50 text-gray-950 relative pt-28 sm:pt-36 overflow-x-hidden'
         )}
       >
         <BackgroundShapes />
